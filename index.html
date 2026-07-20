@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Games On</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- AVISO DE ORIENTAÇÃO ESTILO GAME UI -->
+    <div id="rotateWarning">
+        <div class="warning-content">
+            <div class="phone-icon-css"></div>
+            <p>Gire o dispositivo <span>Modo Horizontal Obrigatório</span></p>
+        </div>
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+    <div id="menuContainer" class="container">
+        <h1>Games On</h1>
+        
+        <div class="carousel-wrapper">
+            <button id="prevBtn" class="nav-btn">&#10094;</button>
+            <div id="gamesSlider"></div>
+            <button id="nextBtn" class="nav-btn">&#10095;</button>
+        </div>
+
+        <div class="menu-controls">
+            <button id="btnSave" class="control-btn">Salvar</button>
+            <button id="btnLoad" class="control-btn">Carregar</button>
+            <button id="btnCloseWeb" class="control-btn btn-danger">Sair</button>
+        </div>
+    </div>
+
+    <!-- TELA DE GAMEPLAY -->
+    <div id="gameScreen" class="container hidden">
+        <div class="game-bar">
+            <button id="btnBack" class="game-btn">Voltar ao Menu</button>
+            <button id="btnFullscreen" class="game-btn">Tela Cheia</button>
+        </div>
+        
+        <div class="iframe-container">
+            <iframe id="gameIframe" src="about:blank"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
