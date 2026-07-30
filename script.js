@@ -4,7 +4,6 @@ const gamesData = [
     { title: "Renryuu Ascension", image: "https://data.lewdspot.com/img/thumbs/renryuu-ascension.webp", url: "https://lewdspot.com/embed/renryuu-ascension_26.05.06_2026-06-04/" },
     { title: "Tias Path Home", image: "https://data.lewdspot.com/img/thumbs/tias-path-home.webp", url: "https://lewdspot.com/play?mob=0&url=https://lwdbase3.com/tias-path-home/&fixedwidth=0&gameid=10840&pageid=tias-path-home" },
     { title: "The Girl Who Confessed to Me", image: "https://data.lewdspot.com/img/thumbs/the-girl-who-confessed-to-me.webp", url: "https://lwdbase2.com/the-girl-who-confessed-to-me" },
-    { title: "Call of Nature", image: "https://gamcore.com/f/w/c/call_of_nature.webp", url: "https://call_of_nature_v_ch_2_p2_v0_9_1.fgn.cdn.serverable.com/common/flashes/nf/call_of_nature/v_ch.2_p2_v0.9.1/index.html?d=20260628002952" },
     { title: "From Wife to Wench", image: "https://data.lewdspot.com/img/thumbs/from-wife-to-wench.webp", url: "https://lwdbase3.com/from-wife-to-wench/" },
     { title: "Margarets Sin", image: "https://data.lewdspot.com/img/thumbs/margarets-sin.webp", url: "https://lwdbase2.com/margarets-sin/" },
     { title: "Lust Brawl", image: "https://data.lewdspot.com/img/thumbs/lust-brawl.webp", url: "https://lwdbase3.com/lust-brawl_0.4A_2026-06-15/" },
@@ -16,23 +15,65 @@ const gamesData = [
     { title: "Brewing Curves", image: "https://data.lewdspot.com/img/thumbs/brewing-curves.webp", url: "https://lwdbase3.com/brewing-curves/" },
     { title: "My Life With 4 Succubus", image: "https://data.lewdspot.com/img/thumbs/my-life-with-4-succubus.webp", url: "https://lwdbase3.com/my-life-with-4-succubus/" },
     { title: "Shogun Trainer", image: "https://data.lewdspot.com/img/thumbs/shogun-trainer.webp", url: "https://lwdbase2.com/shogun-trainer/" },
-    { title: "Klee Prank Adventure", image: "https://img.itch.zone/aW1hZ2UvMTIyODUzMy83MTY1MDU2LnBuZw==/347x500/%2Fr3FJ7.png", url: "https://cdn77.gamesofdesire.com/files/html5_new/klee-prank-adventure-1-15/index.html" },
-    { title: "Ochakos Secret", image: "https://gamcore.com/f/w/o/ochakos_secret-4.webp", url: "https://ochakos_secret.fgn.cdn.serverable.com/common/flashes/nf/ochakos_secret/index.html?d=20251123012330" },
-    { title: "My State Sponsored Catgirl", image: "https://gamcore.com/f/w/m/my_state_sponsored_catgirl-2.webp", url: "https://my_state_sponsored_catgirl_v_0_98.fgn.cdn.serverable.com/common/flashes/nf/my_state_sponsored_catgirl/v_0.98/index.html?d=20260623011605" },
-    { title: "PokeLewd: For Waifus", image: "https://gamcore.com/f/w/p/pokelewd_for_waifus-9.webp", url: "https://pokelewd_for_waifus_v_0_9d.fgn.cdn.serverable.com/common/flashes/nf/pokelewd_for_waifus/v_0.9d/index.html?d=20260602003334" },
-    { title: "Lusting My Religion", image: "https://gamcore.com/f/w/l/lusting_my_religion.webp", url: "https://lusting_my_religion_v_0_1_5_2.fgn.cdn.serverable.com/common/flashes/nf/lusting_my_religion/v_0.1.5.2/index.html?d=20260323002117" },
-    { title: "World Tamer", image: "https://fgn.cdn.serverable.com/common/flashes/w/w/world_tamer.webp", url: "https://world_tamer_v_0_41_0.fgn.cdn.serverable.com/common/flashes/nf/world_tamer/v_0.41.0/index.html?d=20260629002527" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" },
-    { title: "", image: "", url: "" }
-];
+    { title: "Klee Prank Adventure", image: "https://cdn77.gamesofdesire.com/files/img/klee-prank-adventure-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/klee-prank-adventure-1-15/index.html" },
+    { title: "Ochakos Secret", image: "https://cdn77.gamesofdesire.com/files/img/s1/ochako-s-secret-1.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/ochako-s-secret-full-version/index.html" },
+    { title: "My State Sponsored Catgirl", image: "https://cdn77.gamesofdesire.com/files/img/s1/my-state-sponsored-catgirl-1.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/my-state-sponsored-catgirl-0-97/index.html" },
+    { title: "World Tamer", image: "https://img.itch.zone/aW1nLzI4NDA5OTY2LmdpZg==/315x250%23c/Du2eLG.gif", url: "https://html-classic.itch.zone/html/13491748/index.html?v=1782254084" },
+    { title: "Tales of Divinity: The Lewdest Journey of Rodinka Called Squirrel", image: "https://cdn77.gamesofdesire.com/files/img/tales-of-divinity-the-lewdest-journey-of-rodinka-called-squirrel-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/tales-of-divinity-the-lewdest-journey-of-rodinka-called-squirrel-v0-07/index.html" },
+    { title: "Naughty Principal", image: "https://cdn77.gamesofdesire.com/files/img/naughty-principal-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/naughty-principal-full-game/index.html" },
+    { title: "Idle Waifu", image: "https://cdn77.gamesofdesire.com/files/img/idle-waifu-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/idle-waifu/index.html" },
+    { title: "Strip Blackjack French Maid", image: "https://cdn77.gamesofdesire.com/files/img/strip-blackjack-french-maid-2.webp", url: "https://www.gamesofdesire.com/ruffle.php?id=200" },
+    { title: "Lust for Wealth", image: "https://cdn77.gamesofdesire.com/files/img/lust-for-wealth-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/lust-for-wealth/index.html" },
+    { title: "Lotte's Red Chair", image: "https://cdn77.gamesofdesire.com/files/img/lotte-s-red-chair-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/lotte-s-red-chair-full-version/index.html" },
+    { title: "Tainted Harmony: A Succubus`s Embrace", image: "https://cdn77.gamesofdesire.com/files/img/tainted-harmony-a-succubus-s-embrace-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/tainted-harmony-a-succubus-s-embrace/index.html" },
+    { title: "Salacious Sakura", image: "https://cdn77.gamesofdesire.com/files/img/salacious-sakura-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/salacious-sakura/index.html" },
+    { title: "Reika Mission", image: "https://cdn77.gamesofdesire.com/files/img/reika-mission-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/reika-mission/index.html" },
+    { title: "Branded to Fall", image: "https://cdn77.gamesofdesire.com/files/img/branded-to-fall-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/branded-to-fall/index.html" },
+    { title: "DickCare", image: "https://cdn77.gamesofdesire.com/files/img/dickcare-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/dickcare-0-345/index.html" },
+    { title: "Gazonga Chronicles", image: "https://cdn77.gamesofdesire.com/files/img/gazonga-chronicles-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/gazonga-chronicles/index.html" },
+    { title: "Milk University", image: "https://cdn77.gamesofdesire.com/files/img/milk-university-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/milk-university/index.html" },
+    { title: "ChariKiss", image: "https://cdn77.gamesofdesire.com/files/img/charikiss-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/charikiss/index.html" },
+    { title: "The After Hours: Office Predators", image: "https://cdn77.gamesofdesire.com/files/img/the-after-hours-office-predators-1.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/the-after-hours-office-predators/index.html" },
+    { title: "Step Sis Is Kinda Horny?!", image: "https://cdn77.gamesofdesire.com/files/img/step-sis-is-kinda-horny-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/step-sis-is-kinda-horny/index.html" },
+    { title: "My New Paranormal Life", image: "https://cdn77.gamesofdesire.com/files/img/my-new-paranormal-life-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/my-new-paranormal-life/index.html" },
+    { title: "Lost Lagoon", image: "https://cdn77.gamesofdesire.com/files/img/lost-lagoon-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/lost-lagoon-0-3-3/index.html" },
+    { title: "Demon's Servant", image: "https://cdn77.gamesofdesire.com/files/img/demon-s-servant-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/demon-s-servant/index.html" },
+    { title: "Milfust", image: "https://cdn77.gamesofdesire.com/files/img/milfust-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/milfust/index.html" },
+    { title: "The Fixer", image: "https://cdn77.gamesofdesire.com/files/img/the-fixer-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/the-fixer-v0-3-3-21/index.html" },
+    { title: "Perfect Family: A Family of Perverts", image: "https://cdn77.gamesofdesire.com/files/img/perfect-family-a-family-of-perverts-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/perfect-family-a-family-of-perverts/index.html" },
+    { title: "Welcome to Nicest", image: "https://cdn77.gamesofdesire.com/files/img/welcome-to-nicest-3.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/welcome-to-nicest-0-4/index.html" },
+    { title: "Lust Legion", image: "https://cdn77.gamesofdesire.com/files/img/lust-legion-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/lust-legion/index.html" },
+    { title: "Kingdom of Subversion", image: "https://cdn77.gamesofdesire.com/files/img/kingdom-of-subversion-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/kingdom-of-subversion-v0-23-1/index.html" },
+    { title: "KonoSuba: This lecherous World", image: "https://cdn77.gamesofdesire.com/files/img/konosuba-this-lecherous-world-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/konosuba-this-lecherous-world/index.html" },
+    { title: "My Hero Rising", image: "https://cdn77.gamesofdesire.com/files/img/my-hero-rising-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/my-hero-rising-0-76/index.html" },
+    { title: "My Sweet Home", image: "https://cdn77.gamesofdesire.com/files/img/my-sweet-home-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/my-sweet-home/index.html" },
+    { title: "Meet'N'Fuck : Grandma Boobitch", image: "https://cdn77.gamesofdesire.com/files/img/meet-n-fuck-grandma-boobitch-free-full-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/meet-n-fuck-grandma-boobitch-free-full/index.html" },
+    { title: "Goblin Waifu", image: "https://cdn77.gamesofdesire.com/files/img/goblin-waifu-3.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/goblin-waifu/index.html" },
+    { title: "Isekai Incubus", image: "https://cdn77.gamesofdesire.com/files/img/isekai-incubus-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/isekai-incubus-1-3/index.html" },
+    { title: "MonGirl Sexpedition", image: "https://cdn77.gamesofdesire.com/files/img/mongirl-sexpedition-3.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/mongirl-sexpedition/index.html" },
+    { title: "Surrendering to My Crush", image: "https://cdn77.gamesofdesire.com/files/img/surrendering-to-my-crush-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/surrendering-to-my-crush-1-11/index.html" },
+    { title: "The void club ", image: "https://cdn77.gamesofdesire.com/files/img/the-voic-club-ch-5-2-0-pokemon-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/the-voic-club-ch-5-2-0-pokemon/index.html" },
+    { title: "Manic Pixie Waifus Update", image: "https://cdn77.gamesofdesire.com/files/img/manic-pixie-waifus-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/manic-pixie-waifus/index.html" },
+    { title: "Monster Girl 1,000", image: "https://cdn77.gamesofdesire.com/files/img/monster-girl-1-000-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/monster-girl-1-000/index.html" },
+    { title: "Peerless Lust", image: "https://cdn77.gamesofdesire.com/files/img/peerless-lust-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/peerless-lust/index.html" },
+    { title: "My Family Farm", image: "https://cdn77.gamesofdesire.com/files/img/my-family-farm-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/my-family-farm/index.html" },
+    { title: "Emilia & Joseph: Exploited Innocence", image: "https://cdn77.gamesofdesire.com/files/img/emilia-joseph-exploited-innocence-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/emilia-joseph-exploited-innocence/index.html" },
+    { title: "Maiden Trainer", image: "https://cdn77.gamesofdesire.com/files/img/maiden-trainer-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5/maiden-trainer/index.html" },
+    { title: "BDSM Apocalypse", image: "https://cdn77.gamesofdesire.com/files/img/bdsm-apocalypse-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/bdsm-apocalypse/index.html" },
+    { title: "Erosion", image: "https://cdn77.gamesofdesire.com/files/img/erosion-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/erosion/index.html" },
+    { title: "My Girlfriend's Friends", image: "https://cdn77.gamesofdesire.com/files/img/my-girlfriend-s-friends-3.webp", url: "https://cdn77.gamesofdesire.com/files/html5/my-girlfriend-s-friends/index.html" },
+    { title: "Breaking The Lust", image: "https://cdn77.gamesofdesire.com/files/img/breaking-the-lust-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5/breaking-the-lust/index.html" },
+    { title: "Paprika Trainer", image: "https://cdn77.gamesofdesire.com/files/img/paprika-trainer-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5_new/paprika-trainer-1-2-0-0/index.html" },
+    { title: "Milfy Cummy: Gloria Returns", image: "https://cdn77.gamesofdesire.com/files/img/milfy-cummy-gloria-returns-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5/milfy-cummy-gloria-returns/index.html" },
+    { title: "Nano-control", image: "https://cdn77.gamesofdesire.com/files/img/nano-control-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5/nano-control-v1-0c/index.html" },
+    { title: "Teens Do Porn", image: "https://cdn77.gamesofdesire.com/files/img/teens-do-porn-2.webp", url: "https://cdn77.gamesofdesire.com/files/html5/teens-do-porn/index.html" },
+    { title: "Happy NEET Raising Guide", image: "https://vnpocket.com/resources/game/2026-04/d55460870e268d8b09537a2eb01e69fe41b4f08c3fa74ea4e3783d00b5fd3672.webp", url: "https://vnpocket.com/resources/games/rpgmakermv/1842fa3e-fccf-43a5-bbea-071750ac3d0a/e3fafd4d-71d8-4c57-b0b9-2fb83bd1c3b8/index.html" },
+    { title: "Winter Memories", image: "https://vnpocket.com/resources/game/2026-04/b3e8cb7f39b5d9cb07861dabd908f079aba4adf9cc28b81dc03d6b67c08a6a7a.webp", url: "https://vnpocket.com/resources/games/rpgmakermv/813b9cf0-60f9-4315-bc68-3fb9c181b2da/3bbdf1fc-1750-40cc-9ec8-c5e4cf097973/www/index.html" },
+    { title: "Summer Memories", image: "https://vnpocket.com/resources/game/2026-04/0682b306fcb7c9c06d123b79fc39c29efda1b1a235d0af99382ab6d4a8db9020.webp", url: "https://vnpocket.com/resources/games/rpgmakermv/d1ff36c2-7aca-45e3-ac6b-6c116e4235a9/ba5cbb8f-3b44-484d-a888-4398e045d2e5/www/index.html" },
+    { title: "Daily Lives of My Countryside", image: "https://vnpocket.com/resources/game/2026-04/ecadd0db43eb10567324527db1f0c53f493b6802f9790f70e7e3e76915b2a0ce.webp", url: "https://vnpocket.com/resources/games/rpgmakermv/d2d83a14-217c-454b-a892-a031d94e5fd2/09143087-d79c-48e2-b6ad-e67a67000283/www/index.html" },
+    { title: "Daily Board Game Life with a Summoned Outer Deity Female", image: "https://vnpocket.com/resources/game/2026-04/e840266cc628a98aab44d77c91580b5fa15203a10ae6f210328aaa3e36ae3bdd.webp", url: "https://vnpocket.com/resources/games/renpy/5aaf9803-a868-4c73-b63d-9e8a00cec121/2b458638-b508-4af2-817c-156c1181e21d/index.html" },
+    { title: "Life With a Slave -Teaching Feeling", image: "https://vnpocket.com/resources/game/2026-04/99c1f1e64a7a3778a27423b5e6dc2c5791e74e240ce69e13a02e79c75412c42c.webp", url: "https://vnpocket.com/resources/games/tyrano/d95050a6-5b9c-49c3-8fa6-fc8239f89115/62a95d40-5fd3-4f1d-bb2c-b2a25a2831e5/resources/app/index.html" }
+]
 
 let currentIndex = 0;
 
@@ -64,6 +105,66 @@ prevBtn.addEventListener('click', () => {
     currentIndex = (currentIndex === 0) ? gamesData.length - 1 : currentIndex - 1;
     renderCard(currentIndex);
 });
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex === gamesData.length - 1) ? 0 : currentIndex + 1;
+    renderCard(currentIndex);
+});
+
+// Ações de Gameplay e Rotação Lock
+function openGame(link) {
+    window.focus(); 
+    gameIframe.src = link;
+    menuContainer.classList.add('hidden');
+    gameScreen.classList.remove('hidden');
+    
+    if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock('landscape').catch(() => {
+            console.log("Nota: Trava rígida de rotação aguardando tela cheia.");
+        });
+    }
+}
+
+// Botão de voltar (Limpeza de RAM essencial)
+btnBack.addEventListener('click', () => {
+    gameIframe.src = "about:blank"; 
+    gameScreen.classList.add('hidden');
+    menuContainer.classList.remove('hidden');
+    
+    if (document.fullscreenElement) {
+        document.exitFullscreen();
+    }
+});
+
+// Fullscreen dinâmico com trava automática de hardware
+btnFullscreen.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+        gameScreen.requestFullscreen().then(() => {
+            btnFullscreen.textContent = "Sair da Tela Cheia";
+            gameIframe.focus(); 
+            
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape-primary').catch(err => console.log(err));
+            }
+        }).catch(err => alert(`Erro ao entrar em Tela Cheia: ${err.message}`));
+    } else {
+        document.exitFullscreen();
+    }
+});
+
+// Ouvinte de mudança de tela cheia
+document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+        btnFullscreen.textContent = "Tela Cheia";
+        gameIframe.focus();
+        if (screen.orientation && screen.orientation.unlock) {
+            screen.orientation.unlock();
+        }
+    }
+});
+
+// Carregar o primeiro card ao abrir o site
+renderCard(currentIndex);});
 
 nextBtn.addEventListener('click', () => {
     currentIndex = (currentIndex === gamesData.length - 1) ? 0 : currentIndex + 1;
