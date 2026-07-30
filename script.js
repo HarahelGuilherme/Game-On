@@ -73,7 +73,7 @@ const gamesData = [
     { title: "Daily Lives of My Countryside", image: "https://vnpocket.com/resources/game/2026-04/ecadd0db43eb10567324527db1f0c53f493b6802f9790f70e7e3e76915b2a0ce.webp", url: "https://vnpocket.com/resources/games/rpgmakermv/d2d83a14-217c-454b-a892-a031d94e5fd2/09143087-d79c-48e2-b6ad-e67a67000283/www/index.html" },
     { title: "Daily Board Game Life with a Summoned Outer Deity Female", image: "https://vnpocket.com/resources/game/2026-04/e840266cc628a98aab44d77c91580b5fa15203a10ae6f210328aaa3e36ae3bdd.webp", url: "https://vnpocket.com/resources/games/renpy/5aaf9803-a868-4c73-b63d-9e8a00cec121/2b458638-b508-4af2-817c-156c1181e21d/index.html" },
     { title: "Life With a Slave -Teaching Feeling", image: "https://vnpocket.com/resources/game/2026-04/99c1f1e64a7a3778a27423b5e6dc2c5791e74e240ce69e13a02e79c75412c42c.webp", url: "https://vnpocket.com/resources/games/tyrano/d95050a6-5b9c-49c3-8fa6-fc8239f89115/62a95d40-5fd3-4f1d-bb2c-b2a25a2831e5/resources/app/index.html" }
-]
+];
 
 let currentIndex = 0;
 
@@ -87,17 +87,23 @@ const gameIframe = document.getElementById('gameIframe');
 const btnBack = document.getElementById('btnBack');
 const btnFullscreen = document.getElementById('btnFullscreen');
 
-// Renderizar o card do Carrossel com estrutura atualizada
+// Otimização para Mobile: Configura permissões essenciais do Iframe
+gameIframe.setAttribute('allow', 'fullscreen; autoplay; payment');
+gameIframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-popups');
+
 function renderCard(index) {
     const game = gamesData[index];
     gamesSlider.innerHTML = `
         <div class="game-card-container">
-            <div class="game-image-wrapper" onclick="openGame('${game.url}')">
-                <img src="${game.image}" alt="${game.title}" class="game-image-preview">
+            <div class="game-image-wrapper" id="cardClickArea">
+                <img src="${game.image}" alt="${game.title}" class="game-image-preview" loading="lazy">
             </div>
             <div class="game-card-title">${game.title}</div>
         </div>
     `;
+    
+    // Uso de evento para evitar falhas de toque no mobile
+    document.getElementById('cardClickArea').addEventListener('click', () => openGame(game.url));
 }
 
 // Controles do Carrossel
@@ -111,57 +117,71 @@ nextBtn.addEventListener('click', () => {
     renderCard(currentIndex);
 });
 
-// Ações de Gameplay e Rotação Lock
+// Abrir Jogo
 function openGame(link) {
-    window.focus(); 
     gameIframe.src = link;
     menuContainer.classList.add('hidden');
     gameScreen.classList.remove('hidden');
-    
-    if (screen.orientation && screen.orientation.lock) {
-        screen.orientation.lock('landscape').catch(() => {
-            console.log("Nota: Trava rígida de rotação aguardando tela cheia.");
-        });
-    }
 }
 
-// Botão de voltar (Limpeza de RAM essencial)
+// Limpeza agressiva de RAM ao fechar o jogo (Fundamental para 4GB RAM)
 btnBack.addEventListener('click', () => {
+    // Força o Garbage Collector a liberar a memória do jogo no WebKit/Blink
     gameIframe.src = "about:blank"; 
+    
     gameScreen.classList.add('hidden');
     menuContainer.classList.remove('hidden');
     
     if (document.fullscreenElement) {
-        document.exitFullscreen();
+        document.exitFullscreen().catch(() => {});
     }
 });
 
-// Fullscreen dinâmico com trava automática de hardware
-btnFullscreen.addEventListener('click', () => {
-    if (!document.fullscreenElement) {
-        gameScreen.requestFullscreen().then(() => {
+// Fullscreen Dinâmico ajustado para Android / Chrome
+btnFullscreen.addEventListener('click', async () => {
+    try {
+        if (!document.fullscreenElement) {
+            // Requisita Tela Cheia
+            if (gameScreen.requestFullscreen) {
+                await gameScreen.requestFullscreen();
+            } else if (gameScreen.webkitRequestFullscreen) {
+                await gameScreen.webkitRequestFullscreen();
+            }
+
             btnFullscreen.textContent = "Sair da Tela Cheia";
             gameIframe.focus(); 
-            
+
+            // Bloqueia rotação somente após o modo Tela Cheia estar ativo
             if (screen.orientation && screen.orientation.lock) {
-                screen.orientation.lock('landscape-primary').catch(err => console.log(err));
+                await screen.orientation.lock('landscape-primary').catch(() => {
+                    // Fallback caso a orientação primária falhe
+                    return screen.orientation.lock('landscape');
+                }).catch(err => console.log("Erro de orientação ignorado:", err));
             }
-        }).catch(err => alert(`Erro ao entrar em Tela Cheia: ${err.message}`));
-    } else {
-        document.exitFullscreen();
+        } else {
+            if (document.exitFullscreen) {
+                await document.exitFullscreen();
+            }
+        }
+    } catch (err) {
+        console.warn("Falha no modo tela cheia:", err);
     }
 });
 
-// Ouvinte de mudança de tela cheia
-document.addEventListener('fullscreenchange', () => {
-    if (!document.fullscreenElement) {
+// Listener unificado de mudança de estado de Tela Cheia
+document.addEventListener('fullscreenchange', handleFullscreenChange);
+document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+
+function handleFullscreenChange() {
+    if (!document.fullscreenElement && !document.webkitFullscreenElement) {
         btnFullscreen.textContent = "Tela Cheia";
         gameIframe.focus();
+        
         if (screen.orientation && screen.orientation.unlock) {
             screen.orientation.unlock();
         }
     }
-});
+}
 
-// Carregar o primeiro card ao abrir o site
+// Renderização inicial
 renderCard(currentIndex);
