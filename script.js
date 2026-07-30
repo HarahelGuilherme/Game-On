@@ -1,3 +1,12 @@
+// REGISTRO DO SERVICE WORKER (Adicione no início do seu arquivo JS)
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('Service Worker de Cache ativo!', reg.scope))
+            .catch(err => console.warn('Erro ao registrar Service Worker:', err));
+    });
+}
+
 // BANCO DE DADOS LOCAL DOS JOGOS
 const gamesData = [
     { title: "Heiss Ward", image: "https://data.lewdspot.com/img/thumbs/heiss-ward.png", url: "https://lwdbase2.com/heiss-ward-14-20260707/" },
@@ -102,7 +111,6 @@ function renderCard(index) {
         </div>
     `;
     
-    // Uso de evento para evitar falhas de toque no mobile
     document.getElementById('cardClickArea').addEventListener('click', () => openGame(game.url));
 }
 
@@ -124,9 +132,8 @@ function openGame(link) {
     gameScreen.classList.remove('hidden');
 }
 
-// Limpeza agressiva de RAM ao fechar o jogo (Fundamental para 4GB RAM)
+// Limpeza de RAM do IFRAME (Sem apagar o Cache mantido pelo Service Worker)
 btnBack.addEventListener('click', () => {
-    // Força o Garbage Collector a liberar a memória do jogo no WebKit/Blink
     gameIframe.src = "about:blank"; 
     
     gameScreen.classList.add('hidden');
@@ -141,7 +148,6 @@ btnBack.addEventListener('click', () => {
 btnFullscreen.addEventListener('click', async () => {
     try {
         if (!document.fullscreenElement) {
-            // Requisita Tela Cheia
             if (gameScreen.requestFullscreen) {
                 await gameScreen.requestFullscreen();
             } else if (gameScreen.webkitRequestFullscreen) {
@@ -151,10 +157,8 @@ btnFullscreen.addEventListener('click', async () => {
             btnFullscreen.textContent = "Sair da Tela Cheia";
             gameIframe.focus(); 
 
-            // Bloqueia rotação somente após o modo Tela Cheia estar ativo
             if (screen.orientation && screen.orientation.lock) {
                 await screen.orientation.lock('landscape-primary').catch(() => {
-                    // Fallback caso a orientação primária falhe
                     return screen.orientation.lock('landscape');
                 }).catch(err => console.log("Erro de orientação ignorado:", err));
             }
@@ -168,7 +172,6 @@ btnFullscreen.addEventListener('click', async () => {
     }
 });
 
-// Listener unificado de mudança de estado de Tela Cheia
 document.addEventListener('fullscreenchange', handleFullscreenChange);
 document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
 
